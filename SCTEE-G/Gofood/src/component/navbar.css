@@ -1,0 +1,28 @@
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    width: 60px;
+}
+.nav-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+.nav-item{
+    margin: 0;
+    padding: 0;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-item a:hover{
+    text-decoration: underline;
+}
