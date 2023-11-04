@@ -3,6 +3,7 @@ import Topoki from '../image/topoki.jpg';
 import Dorayaki from '../image/dorayaki.jpeg';
 import Gyoza from '../image/gyoza.jpg';
 import Udon from '../image/udon.jpg';
+import Cart from '../image/cart.png';
 import './Home.css';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -44,6 +45,9 @@ function Home(){
         <div className="content">
             <img src={ImgHeader} className="img-header"/>
             <h1>Mau makan apa hari ini?</h1>
+            <button>
+              <img src={Cart} alt='cart'/>
+            </button>
             <div className='card-container'>
                 {products.map((product) => (
                     <div className='card' key={product.id}>
@@ -55,7 +59,7 @@ function Home(){
                             <button
                             type="button"
                             onClick={() => decreaseOrderCount(product.id)}
-                            className="btn btn-secondary"
+                            className="btn btn-light"
                             >
                             -
                             </button>
@@ -63,7 +67,7 @@ function Home(){
                             <button
                             type="button"
                             onClick={() => increaseOrderCount(product.id)}
-                            className="btn btn-secondary"
+                            className="btn btn-light"
                             >
                             +
                             </button>
